@@ -102,7 +102,13 @@ table thead th {
     font-weight: bolder;
 }
 
-.TitProd,
+.TitProd {
+    margin-left: 100px;
+    font-weight: bolder;
+    color: #477979;
+
+}
+
 .cargaerror,
 .spinner-border,
 .btn-primary {
