@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69c1ac7ff7.js" crossorigin="anonymous"></script>
+    <title>TPO - Tu Servicio</title>
+</head>
+
+<header>
+    <img src="img/TSLogo.png" alt="Logo" class="logo">
+</header>
+
+<nav class="cont-naveg">
+    <nav class="naveg"><a href="index.html">Inicio</a></nav>
+    <nav class="naveg"><a href="productos.html">Administración</a></nav>
+    <nav class="naveg"><a href="contacto.html">Contacto</a></nav>
+</nav>
+
+<body>
+    <div class="contacto_prox">
+        <p class="parrafo_contacto">Por favor, completá los datos a continuación y a la brevedad nos ponemos en contacto con vos.</p>
+    </div>
+
+    <form action="https://formspree.io/f/xvonelaa" method="POST">
+        <label for="oficioSel">Departamento:</label>
+        <select id="oficioSel" name="oficioSel">
+            <option value="carpinteria">Ventas</option>
+            <option value="electricidad">Soporte</option>
+            <option value="plomeria">Otros</option>
+        </select>
+        <label>
+            Tu nombre:
+            <input type="text" name="nombre">
+        </label>
+        <label>
+            Tu correo electrónico:
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </label>
+        <label>
+            Tu consulta:
+            <textarea name="consulta" oninput="validateInput(this)"></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="js/scriptform.js"></script>
+    <footer>
+        <p>Derechos reservados - 2023</p>
+        <div class="socialiconos">
+            <i class="fa-brands fa-facebook fa-lg" style="color: #ffc55a;"></i>
+            <i class="fa-brands fa-twitter fa-lg" style="color: #ffc55a;"></i>
+            <i class="fa-brands fa-instagram fa-lg" style="color: #ffc55a;"></i>
+        </div>
+    </footer>
+</body>
+</html>
