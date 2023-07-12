@@ -33,6 +33,14 @@ header {
     align-items: center;
 }
 
+.table-responsive {
+    max-width: 1000px;
+    margin: auto;
+   
+}
+
+ 
+
 .mb-3 {
     font-weight: bold;
 }
@@ -47,6 +55,7 @@ header {
     color: white;
     font-size: 25px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .naveg:hover {
@@ -72,6 +81,33 @@ header {
 a {
     text-decoration: none;
     color: white;
+}
+
+table thead th {
+    color:#477979
+  }
+  
+
+  table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+
+  table tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+  }
+
+.EditProd{
+    align-items: center;
+    font-weight: bolder;
+}
+
+.TitProd,
+.cargaerror,
+.spinner-border,
+.btn-primary {
+    margin-left: 100px;
+
 }
 
 

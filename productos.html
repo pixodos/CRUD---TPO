@@ -21,21 +21,21 @@
     </header>
 
     <nav class="cont-naveg">
-        <nav class="naveg"><a href="index.html">Inicio</a></nav>
-        <nav class="naveg"><a href="productos.html">Administración</a></nav>
-        <nav class="naveg"><a href="contacto.html">Contacto</a></nav>
+        <nav class="naveg"><a href="index.html"  style="text-decoration: none; color: white;">Inicio</a></nav>
+        <nav class="naveg"><a href="productos.html" style="text-decoration: none; color: white;">Administración</a></nav>
+        <nav class="naveg"><a href="contacto.html" style="text-decoration: none; color: white;">Contacto</a></nav>
     </nav>
     <br><br>
 
 
     <main>
         <div id="app" class="container">
-            <h2>Productos</h2>
+            <h2 class="TitProd">Productos</h2>
             <br>
             <a class="btn btn-primary" href="../producto_nuevo.html">Nuevo</a>
             <br><br>
             <div v-if="error">
-                <p>Error al recuperar los datos, por favor recargue la página.</p>
+                <p class="cargaerror">Error al recuperar los datos, por favor recargue la página.</p>
             </div>
             <div v-else>
                 <section v-if="cargando">

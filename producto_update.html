@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TS - Producto Nuevo</title>
+    <title>TS - Editar Item</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
     <main>
         <div class="container" id="app">
             <form style="background-color: rgb(255, 230, 201);margin:10px auto ; width: 400px; padding: 20px;">
-                <h2>Editar Producto </h2>
+                <h2 class="EditProd">Editar Item</h2>
                 <p>Precio:{{precio}}</p>
                 <div class="mb-3">
                     <label for="id">Id</label>
@@ -50,7 +50,8 @@
                     <input type="text" name="imagen" id="imagen" v-model="imagen">
                     <img width="100" :src="imagen" alt="">
                 </div>
-                <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+                <button type="button" class="btn btn-success" v-on:click="modificar()">Guardar</button>
+                <button type="button" class="btn btn-danger"><a href="/productos.html" style="text-decoration: none; color: white;">Cancelar</button>
             </form>
         </div>
     </main>
